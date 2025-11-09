@@ -3,7 +3,9 @@ const app = express();
 const PORT = 8000;
 
 app.get("/", (req, res) => {
-  res.send("Welcome to CICD Deployment! This is a demo application.");
+  res.send(
+    "Welcome to CICD Deployment! This is a demo application. webhook triggerd"
+  );
 });
 
 app.get("/test", (req, res) => {
